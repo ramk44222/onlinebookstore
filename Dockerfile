@@ -1,4 +1,2 @@
-FROM openjdk
-COPY target/*.war /
-EXPOSE 8080
-ENTRYPOINT ["java","-war","/my-app-1.0-SNAPSHOT.war"]
+FROM tomcat:9.0
+COPY target/*.war /usr/local/tomcat/webapps/onlinebookstore.war
