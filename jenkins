@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('build') {
             steps{
-                sh "echo cim good$NODE_NAME $BUILD_ID $RAM $JENKINS_URL $ENV"
+                sh "echo cim good$NODE_NAME $BUILD_ID $RAM $JENKINS_URL "
             }
         }
     }
